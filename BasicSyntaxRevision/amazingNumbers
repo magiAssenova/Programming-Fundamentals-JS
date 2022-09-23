@@ -1,0 +1,15 @@
+function amazingNumbers(num1){
+    let num1Str=num1.toString()
+    let sumofDigits=0
+    for (let i=0;i<=(num1Str.length-1);i++){
+        let currentDigit=Number(num1Str[i])
+       // console.log(currentDigit)
+        sumofDigits+=currentDigit
+    }
+    //console.log(sumofDigits)
+    let sumStr=sumofDigits.toString()
+    let result=sumStr.includes(9)?"Amazing? True":"Amazing? False"
+    console.log(`${num1} ${result}`)
+    
+}
+amazingNumbers(1233)

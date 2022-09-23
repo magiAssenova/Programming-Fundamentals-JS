@@ -1,0 +1,11 @@
+function numsfromMtoN (m,n){
+    while (m>=n){
+        console.log(m)
+        m--
+        if(m<n){
+            break;
+        }
+    }
+
+}
+numsfromMtoN(6,3)
